@@ -14,4 +14,8 @@ describe('map', () => {
         expect(map([],'cube')).toEqual([]);
     });
 
+    it("map([a{x : 10}],someObject => someObject.x + 1) -> [11]", ()=>{
+        expect(map([{x : 10}], someObject => someObject.x + 1)).toEqual([11]);
+    });
+
 })
